@@ -12,3 +12,27 @@ outros algoritmos, é necessário realizar várias aplicações chamadas de
 pré-processamento. E geralmente os sistemas que implementam o reconhecimento de
 objetos em uma imagem, utilizam conversão da imagem original para a escala de
 cinza como primeira etapa de pré-processamento.
+
+Apesar desses algoritmos serem executados geralmente em máquinas mais robustas,
+é possível também empregar essas tarefas em sistemas embarcados. Os sistemas
+embarcados são sistemas de computação de propósito específico  que geralmente
+são desenvolvidos para realizar algumas funções dedicadas, muitas vezes com
+restrições computacionais de temp real. São chamados de embarcados por serem
+parte de um dispositivo completo, incluindo \textit{hardware} e partes
+mecânicas~\cite{Lamb15}.
+
+Um sistema embarcado bastante conhecido atualmente entre os desenvolvedores é o
+Raspberry Pi~\cite{raspberry}, uma plataforma de baixo custo com o intuito de
+ser um computador \textit{desktop} ``completo''. Esse dispositivo possui um
+grande poder computacional, se comparado com os seus concorrentes. Em relação ao
+processamento digital de imagens, existem muitos projetos que utilizam o
+raspberry Pi para realizar essa tarefa como em~\cite{Shilpashree15}.
+
+Nesse sentido, tem como proposta utilizar a plataforma Raspberry Pi, mais
+espicificamente a versão Raspberry Pi 3 modelo B, um dispositivo \textit{quad core} 
+que possui 1 GB de RAM e é muito utilizado na comunidade. A ideia é
+aplicar algoritmos de conversão em escala de cinza em plataformas de baixo
+custo, como os sistemas embarcados, e que possuem uma arquitetura
+\textit{multicore} para que seja capaz de aplicar tecnicas de paralelismo,
+aproveitando ao máximo o poder de processamento da plataforma utilizada neste
+trabalho.
