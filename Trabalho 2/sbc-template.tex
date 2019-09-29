@@ -19,7 +19,7 @@
 
 
 \sloppy
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
+\title{Processamento Digital de Imagens em Plataformas Embarcadas}
 
 \author{Erick Modesto Campos}
 
@@ -38,21 +38,28 @@
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+Image processing is a method that performs a series of mathematical operations
+on an image. The intent is to get an enhancement or extract some useful
+information about the image being processed. Although image processing
+algorithms generally run on more robust machines, it is also possible to employ
+these tasks on embedded systems. In this sense, this work aims to use the
+Raspberry Pi platform, more specifically the Raspberry Pi 3 model B version. The
+idea is to apply grayscale conversion algorithms on low cost platforms that have
+a multicore architecture to be able to perform parallelism techniques, making
+the most of the processing power of the platform used.
 \end{abstract}
      
 \begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+O processamento de imagens é um método que executa uma série de operações
+matemáticas em uma imagem.  intuito é obter um aprimoramento ou extrair algumas
+informações úteis a cerca da imagem a ser processada. Apesar dos algoritmos de
+processamento de imagens serem executados geralmente em máquinas mais robustas,
+é possível também empregar essas tarefas em sistemas embarcados.  Nesse sentido,
+este trabalho tem como proposta utilizar a plataforma Raspberry Pi, mais
+espicificamente a versão Raspberry Pi 3 modelo B. A ideia é aplicar algoritmos
+de conversão em escala de cinza em plataformas de baixo custo e que possuem uma
+arquitetura multicore para que seja capaz de aplicar tecnicas de paralelismo,
+aproveitando ao máximo o poder de processamento da plataforma utilizada.
 \end{resumo}
 
 \begin{section}{Introdução}
@@ -66,6 +73,9 @@
 \end{section}
 \begin{section}{Metodologia}
 \input{secs/sec4.tex}
+\end{section}
+\begin{section}{Conclusão}
+\input{secs/sec5.tex}
 \end{section}
 
 \bibliographystyle{sbc}
