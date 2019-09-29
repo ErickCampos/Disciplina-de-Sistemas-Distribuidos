@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}     
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+\sloppy
+\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
+
+\author{Erick Modesto Campos}
+
+
+\address{Instituto de Ciência Exatas e Naturais (ICEN) -- Universidade Federal do Pará
+  (UFPA)\\
+  Laboratório de Visualização, Interação e Sistemas Inteligentes (LabVis - UFPA)\\
+  Cep 66075110 -- Guamá-- Belém -- Pará -- Brazil
+  \email{erick.c.modesto@gmail.com / erickcampos@ufpa.br}
+}
+
+
+\begin{document} 
+
+\onehalfspace
+\maketitle
+
+\begin{abstract}
+  This meta-paper describes the style to be used in articles and short papers
+  for SBC conferences. For papers in English, you should add just an abstract
+  while for the papers in Portuguese, we also ask for an abstract in
+  Portuguese (``resumo''). In both cases, abstracts should not have more than
+  10 lines and must be in the first page of the paper.
+\end{abstract}
+     
+\begin{resumo} 
+  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
+  resumos de artigos para publicação nos anais das conferências organizadas
+  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
+  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
+  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
+  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
+  página do artigo.
+\end{resumo}
+
+\begin{section}{Introdução}
+\input{secs/sec1.tex}
+\end{section}
+\begin{section}{Trabalhos Relacionados}
+\input{secs/sec2.tex}
+\end{section}
+\begin{section}{Aplicações de Pipelining}
+\input{secs/sec3.tex}
+\end{section}
+\begin{section}{Conclusão}
+\input{secs/sec4.tex}
+\end{section}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}

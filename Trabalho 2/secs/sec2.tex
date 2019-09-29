@@ -1,0 +1,71 @@
+Esta seção apresenta trabalhos que utilizaram algum tipo de sistema embarcado
+para realizar tarefas de processamento digital de imagens. Apesar deste trabalho
+utilizar o Raspberry Pi, os trabalhos apresentados a seguir utilizam também
+outras palataformas embarcadas. O objetivo desta seção é mostrar os trabalhos
+que utilizaram processamento de imagens através de uma abordagem sequencial e
+paralela.
+
+\begin{subsection}{Processamento Sequencial}
+
+Técnicas de processamento digital de imagens foram aplicadas np trabalho
+desenvolvido em~\cite{Karthik16} para detectar doenças em bananeiras através do
+reconhecimento de padrões em imagens de folhas de bananeiras. O algoritmo
+alaborado foi executado em uma BeagleBone Black~\cite{beagle}, uma plataforma
+embarcado que possui um ARM Cortex-A8 com dois núcleos de processamento. Apesar
+de ser \textit{dual core} todas as tarefas do algoritmo foram projetadas para
+serem executadas de forma sequential, visto que não era realizado um processamento
+em massa, já que bastava uma foto capturada por uma \textit{webcam} no momento 
+desejado para que a detecção da imagem fosse concluída.
+
+O trabalho proposto em~\cite{Batista17} utilizou algoritmos sequenciais de
+processamento de imagens para realzar o reconhecimento de gestos da cabeça do
+usuário e transformá-los em comandos de controle para um televisor. Para isso,
+foi utilizados as plataformas embarcadas C.H.I.P.~\cite{chip} e
+Arduino~\cite{Arduino}. O C.H.I.P. é uma placa de baixo custo, assim como o
+Raspberry Pi, mas que possui um processador \textit{single core} o que
+inviabilizou o uso de técnicas de processamento paralelo para o reconhecimento
+de gesros da cabeça do usuário. Já o Arduíno, é uma plataformna que possui um
+microcontrolador de 8 bits que foi utilizado apenas para o envio de sinais
+infravermelho de controle para o televisor a ser controlado. 
+
+Já em~\cite{Li09} foi utilizado um FPGA (do inglês \textit{Field-Programmable
+Gate Array}), são dispositivos semicondutores baseados em uma matriz de blocos
+lógicos configuráveis (BLC) conectados via interconexões
+programáveis~\cite{fpga}, para realzar a tarefa de aquisição e também de
+processamento de imagens. O objetivo do trabalho era realizar tarefas de
+processamento de imagens utilizando uma plataforma simples e relativamente mais
+barata. Os algoritmos foram utilizados de forma sequencial, pois as tarefas 
+constistiam basicamente em calculos matemáticos simples baseados nos espaços 
+de cores.  
+
+
+\end{subsection}
+
+
+
+\begin{subsection}{Processamento Paralelo}
+
+O trabalho proposto em~\cite{Sivaranjani15} utilizou algoritmos de processamento de
+imagens para extração de características de impressões digitais dos mãos e dos
+pés. Para isso, foi utilizado um Raspberry Pi com uma distribuição do Debian
+modificada para plataformas embarcadas. O algoritmo necessário para o
+reconhecimento de imagens para extração de recursos biométricos é realizado
+usando o OpenCV-2.4.9~\cite{opencv} --- uma biblioteca de código aberto multiplataforma
+voltado para visão computacional --- usando o CMake, g ++,
+Makefile. Para realzar essa detecção, quatro diferentes algoritmos foram
+modificados para serem executados de forma paralela com o intuito de aproveitar
+ao máximo o poder de processamento da plataforma utilizada.
+
+
+Em~\cite{Markovic18} foi utilizado um \textit{cluster} contendo dez Raspberry
+Pi Modelo B foram utilizados com o intuito de aumentar o poder computacional
+para realizar tarefas de processamento de imagens utilizando um processamento
+paralelo. Foi aplicado um algoritmo de detecção de bordas de objetos com a
+intenção de segmentar a imagem em bordas. O experimento conduzido no trabalho
+utilizou três tarefas de segmentação. A primeira tarefa foi segmentar três
+imagens, em seguida seis imagens e por fim nove imagens. Cada experimento foi
+executado utilizando técnicas de processamento paralelo em apenas um arduíndo e
+também no \textit{cluster}. 
+
+
+\end{subsection}
