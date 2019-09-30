@@ -7,7 +7,7 @@ paralela.
 
 \begin{subsection}{Processamento Sequencial}
 
-Técnicas de processamento digital de imagens foram aplicadas np trabalho
+Técnicas de processamento digital de imagens foram aplicadas no trabalho
 desenvolvido em~\cite{Karthik16} para detectar doenças em bananeiras através do
 reconhecimento de padrões em imagens de folhas de bananeiras. O algoritmo
 alaborado foi executado em uma BeagleBone Black~\cite{beagle}, uma plataforma
@@ -24,18 +24,18 @@ foi utilizados as plataformas embarcadas C.H.I.P.~\cite{chip} e
 Arduino~\cite{Arduino}. O C.H.I.P. é uma placa de baixo custo, assim como o
 Raspberry Pi, mas que possui um processador \textit{single core} o que
 inviabilizou o uso de técnicas de processamento paralelo para o reconhecimento
-de gesros da cabeça do usuário. Já o Arduíno, é uma plataformna que possui um
+de gesros da cabeça do usuário. Já o Arduíno, é uma plataforma que possui um
 microcontrolador de 8 bits que foi utilizado apenas para o envio de sinais
 infravermelho de controle para o televisor a ser controlado. 
 
 Já em~\cite{Li09} foi utilizado um FPGA (do inglês \textit{Field-Programmable
-Gate Array}), são dispositivos semicondutores baseados em uma matriz de blocos
+Gate Array}), um dispositivo semicondutor baseado em uma matriz de blocos
 lógicos configuráveis (BLC) conectados via interconexões
 programáveis~\cite{fpga}, para realzar a tarefa de aquisição e também de
 processamento de imagens. O objetivo do trabalho era realizar tarefas de
 processamento de imagens utilizando uma plataforma simples e relativamente mais
 barata. Os algoritmos foram utilizados de forma sequencial, pois as tarefas 
-constistiam basicamente em calculos matemáticos simples baseados nos espaços 
+constistiam basicamente em cálculos matemáticos simples baseados nos espaços 
 de cores.  
 
 
@@ -58,7 +58,7 @@ ao máximo o poder de processamento da plataforma utilizada.
 
 
 Em~\cite{Markovic18} foi utilizado um \textit{cluster} contendo dez Raspberry
-Pi Modelo B foram utilizados com o intuito de aumentar o poder computacional
+Pi 2 Modelo B com o intuito de aumentar o poder computacional
 para realizar tarefas de processamento de imagens utilizando um processamento
 paralelo. Foi aplicado um algoritmo de detecção de bordas de objetos com a
 intenção de segmentar a imagem em bordas. O experimento conduzido no trabalho

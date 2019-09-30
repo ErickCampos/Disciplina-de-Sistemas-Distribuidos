@@ -37,13 +37,13 @@ o mesmo processo básico que consistem em três etapas:
 
 \begin{lstlisting}
 for each pixel na imagem{
-	vermelho = pixel.Red()
-	verde = pixel.Green()
-	azul = pizel.Blue()
-	Obter_Valor_Cinza = cinza
-	pixel.Red = cinza
-	pixel.Green = cinza
-	pixel.Blue = cinza
+    vermelho = pixel.Red()
+    verde = pixel.Green()
+    azul = pixel.Blue()
+    cinza = Obter_Valor_Cinza()
+    pixel.Red = cinza
+    pixel.Green = cinza
+    pixel.Blue = cinza
 }
 \end{lstlisting}
 
@@ -219,7 +219,7 @@ comunicação, se necessário, visando reduzir custos
 
 \subsubsection{Particionamento}
 Como o Raspberry Pi Modelo B utilizado para executar o programa desenvolvido
-para teste trabalho possui 4 núcleos de processamento, é importante subdividir o
+para este trabalho possui 4 núcleos de processamento, é importante subdividir o
 problema em subtarefas. Uma alternativa seria dividir os 7 algoritmos entre os
 processadores. O problema desta abordagem é que um dos processadores ia executar
 apenas um algoritmo, subutilizando-o em comparação aos demais núcleos. Outra
