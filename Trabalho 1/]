@@ -1,0 +1,44 @@
+Em algumas décadas atrás, era difícil prever que os computadores se tornariam
+tão populares no cotidiano de bilhões de pessoas. Os primeiros computadores,
+como o ENIAC (\textit{Electronic Numerical Integrator and Computer}), por
+exemplo, foram desenvolvidos para realizar funções extremamente específicas que
+limitavam seu uso. A programação nesses computadores era realizada através de
+válvulas mecânicas que assumiam valores binários e precisava de uma grande
+quantidade de pessoas para realizar essa tarefa.
+
+Foi com a chegada dos chamados computadores pessoais (PC, do inglês
+\textit{personal computer}) que a população começou a ter acesso a essa
+tecnologia. O primeiro microcomputador surgiu em 1974, desenvolvido pela empresa
+MITS (\textit{Micro Instrumentation Telemetry Systems}), e possuia um
+microprocessador de 8 bits operando a 2~MHz que já era capaz de realizar
+operações mais variadas, se comparado ao ENIAC, por exemplo, que foi
+desenvolvido para ralizar cálculos balísticos.
+
+Conforme os anos foram passando, o poder de processamento dos computadores foram
+crescendo significativamente. A Tabela~\ref{tab:cpu} mostra a evolução do poder
+de processamento dos microprocessadores.
+
+ \vspace{1cm} 
+\begin{table}[h!]
+\centering
+\caption{Your first table.}
+\label{tab:cpu}
+\begin{tabular}{ccccc} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+\hline
+\textbf{Processador} & \textbf{Ano} & \textbf{Transistores} & \textbf{Dados} & \textbf{Clock}\\
+8080 & 1974 & 6.000 & 8 bits & 2~MHz \\
+8085 & 1976 & 6.500 & 8 bits & 5~MHz \\
+8086 & 1978 & 29.000 & 16 bits & 5~MHz \\
+8088 & 1979 & 29.000 & 8 bits & 5~MHz \\
+80286 & 1982 & 134.000 & 16 bits & 6~MHz \\
+80386 & 1985 & 275.000 & 32 bits & 16~MHz \\ 
+80486 & 1989 & 1.200.000 & 32 bits & 25~MHz \\
+PENTIUM & 1993 & 3.100.000 & 32/64 bits & 60~MHz \\ 
+PENTIUM II & 1997 & 7.500.000 & 64 bits & 233~MHz \\
+PENTIUM III & 1999 & 9.500.000 & 64 bits & 450~MHz \\
+PENTIUM IV & 2000 & 42.000.000 & 64 bits & 1.5~GHz \\
+\hline
+\end{tabular}
+\end{table}
+ \vspace{1cm} 
+ 

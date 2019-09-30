@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+\usepackage{setspace}
+     
+\sloppy
+\title{Pipeline: Uma Técnica de Programação Paralela}
+\vspace{0.5cm}
+\author{Erick Modesto Campos}
+\vspace{0.5cm}
+
+\address{Instituto de Ciência Exatas e Naturais (ICEN) -- Universidade Federal do Pará
+  (UFPA)\\
+  Laboratório de Visualização, Interação e Sistemas Inteligentes (LabVis - UFPA)\\
+  Cep 66075110 -- Belém -- Pará -- Brazil
+  \email{erick.c.modesto@gmail.com / erickcampos@ufpa.br}
+}
+
+
+\begin{document} 
+
+\onehalfspace
+\maketitle
+
+\begin{abstract}
+   With the evolution of microprocessors, the execution of sequential tasks has
+   become increasingly unfeasible to be applied in scenarios where the issue of
+   performance must be considered. Therefore, parallel programming techniques
+   are essential to extract maximum performance in sequential task tasks.
+   Therefore, parallel programming techniques are essential to extract maximum
+   performance in serial tasks. In this sense, the so-called pipeline technique
+   may be a good alternative for improving performance in applications.
+
+\end{abstract}
+     
+\begin{resumo}
+  Com a evolução dos microprocessadores, a execução de tarefas sequenciais foi
+  se tornanando cada vez mais inviável de ser aplicado em cenários onde a
+  questão do desempenho deve ser considerado. Por isso, técnicas de programação
+  paralela são imprescindíveis para extrair o máximo de desempenho em tarefas
+  de tarefas sequenciais. Nesse sentido, a técnica denominada de pipeline pode
+  ser uma boa alternativa para a melhora de desenpenho em aplicações.
+\end{resumo}
+
+\begin{section}{Introdução}
+\input{secs/sec1.tex}
+\end{section}
+\begin{section}{Pipelining}
+\input{secs/sec2.tex}
+\end{section}
+\begin{section}{Aplicações de Pipelining}
+\input{secs/sec3.tex}
+\end{section}
+\begin{section}{Conclusão}
+\input{secs/sec4.tex}
+\end{section}
+\newpage
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}

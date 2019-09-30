@@ -1,0 +1,26 @@
+Apesar de simples, o pipelining é uma técnica bastante robusta e muito utilizada
+em aplicações onde a demanda de desempenho é requerida.
+
+Em~\cite{Suleman10}, por exemplo, os autores propuseram o Feedback-Directed
+Pipelining (FDP) --- pipelining direcionado por feedback ---, um
+\textit{framework} que escolhe a alocação de cada núcleo responsável por
+executar as subtarefas definidas. O FDP primeiro maximiza o desempenho da carga
+de trabalho e economiza energia reduzindo o número de núcleos ativos, sem afetar
+o desempenho. A avaliação em um sistem a com dois processadores Core2Quad
+(totalizando 8 núcleos) mostrou que em média a técnica de pipeline modificada
+aplicada fornece um \textit{speedup} de 4.2x, uma difirença significativamente
+maior que o \textit{speedup} de 2.3x obtido através da técnica tradicional de
+pipeline. Além disso, o trabalho proposto é robusto a mudança de configuração do
+computador utilizado.
+
+Já em~\cite{Xiao10} é apresentado um modelo de processamento paralelo de imagens
+digitais baseado na técnica de pipeline. O objetivo do tranalho é atender as
+necessidades do processamento de imagens de sensoriamento remoto, pois com a
+crescente quantidade de dados a serem processados, execuções sequenciais dos
+algoritmos diminuem a eficiência sensoriamento. A técnica de pipeline utilizada
+dividia uma imagem digital de x*y \textit{pixels} em subimagens com uma
+quantidade menor de \textit{pixel}, mantendo a questão do balanceamento
+(subimagens de tamanhos semelhantes). Cada subimagens dessa era executada em um
+determinado núcleo de processamento. Dessa forma, o desempenho do processamento
+das imagens aumentou signficativamente considerando uma grande quantidade de
+dados (imagens a serem processadas).
