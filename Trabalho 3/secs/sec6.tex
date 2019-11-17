@@ -1,0 +1,75 @@
+Para realizar as simulações, foi determinado cenários diferentes onde cada
+cenário executou o código com uma certa quantidade de processadores. Dessa forma
+foi possível medir o desempenho conforme a quantidade de processadores
+utilizadas. Para cada cenário, o código foi executado cinco vezes e foi coletado
+a média dessas cinco execuções para representar o tempo de execução.
+
+Para a análise do desempenho foi utilizado as seguintes métricas:
+
+\begin{itemize}
+\item Tempo de execução
+\item \textit{Speedup}
+\item Eficiência
+\item Desempenho
+\end{itemize}
+
+O tempo de execução é a soma do tempo de computação, tempo de comunicação e o
+tempo ocioso, como mostrado na Equação~\ref{eq:tempo}. 
+
+\begin{equation}
+\label{eq:tempo}
+T_{exec} = T_{comput} + T_{comunic} + T_{ocioso}
+\end{equation}
+O \textit{speedup} é a razão entre o tempo de execução em apenas um
+processador e o tempo de execução em múltiplos processadores. A
+equação~\ref{eq:speedup} mostra o cálculo do \textit{speedup}.
+
+\begin{equation}
+\label{eq:speedup}
+S = \frac{tempo~1~processador}{tempo~N~processadores}
+\end{equation}
+
+A eficiência é determinada pela relação entre o speedup obtido e o
+número de processadores necessários para obtê-lo, como mostrado na
+Equação~\ref{eq:eficiencia}.
+
+\begin{equation}
+\label{eq:eficiencia}
+E = \frac{Speedup}{numero~de~processadores}
+\end{equation}
+
+Já o desempenho Determina o ``quanto'' os processadores estão sendo
+utilizados e é calculado pela Equação~\ref{eq:desempenho}.
+
+\begin{equation}
+\label{eq:desempenho}
+D = E\times100\%
+\end{equation}
+
+
+\subsection{Desempenho OpenMP}
+
+A Tabela~\ref{tab:analise} mostra o resultados da avaliação de desempenho para o
+paralelismo aplicado utilizando a biblioteca OpenMP.
+
+\begin{table}[h]
+\centering
+\caption{OpenMP: análise de desempenho}
+\begin{tabular}{ccccc}
+\hline
+\textbf{Nº CPU}&\textbf{Tempo exec.}&\textbf{\textit{Speedup}}&\textbf{Eficiência}&\textbf{Desempenho}\\
+\hline
+1 & 4h8m7s & -- & -- & --  \\
+2 & 2h12m38s & 1.870 & 0.935 & 93.5\% \\
+3 & 1h39m22s & 2.496 & 0.832 & 83.2\% \\
+4 & 1h17m17s & 3.210 & 0.802 & 80.2\% \\ 
+\hline
+\end{tabular}
+\label{tab:analise}
+\end{table}
+
+É possível perceber que o tempo de execução diminuiu consideravelmente a medida
+que a quantidade de processadores aumentou. Ou seja, a utilização do paralelismo
+foi imprescindível para que o tempo de execução melhorasse. Contudo o desempenho
+dos processares foi inversamente proporcional, ao número de \textit{threads}
+utilizados.

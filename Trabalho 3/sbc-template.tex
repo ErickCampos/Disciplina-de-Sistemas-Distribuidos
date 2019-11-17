@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}     
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+\sloppy
+\title{Processamento Digital de Imagens em Plataformas Embarcadas}
+
+\author{Erick Modesto Campos}
+
+
+\address{Instituto de Ciência Exatas e Naturais (ICEN) -- Universidade Federal do Pará
+  (UFPA)\\
+  Laboratório de Visualização, Interação e Sistemas Inteligentes (LabVis - UFPA)\\
+  Cep 66075110 -- Guamá-- Belém -- Pará -- Brazil
+  \email{erick.c.modesto@gmail.com / erickcampos@ufpa.br}
+}
+
+
+\begin{document} 
+
+\onehalfspace
+\maketitle
+
+\begin{abstract}
+Image processing is a method that performs a series of mathematical operations
+on an image. The intent is to get an enhancement or extract some useful
+information about the image being processed. Although image processing
+algorithms generally run on more robust machines, it is also possible to employ
+these tasks on embedded systems. In this sense, this work aims to use the
+Raspberry Pi platform, more specifically the Raspberry Pi 3 model B version. The
+idea is to apply grayscale conversion algorithms on low cost platforms that have
+a multicore architecture to be able to perform parallelism techniques, making
+the most of the processing power of the platform used.
+\end{abstract}
+     
+\begin{resumo} 
+O processamento de imagens é um método que executa uma série de operações
+matemáticas em uma imagem.  intuito é obter um aprimoramento ou extrair algumas
+informações úteis a cerca da imagem a ser processada. Apesar dos algoritmos de
+processamento de imagens serem executados geralmente em máquinas mais robustas,
+é possível também empregar essas tarefas em sistemas embarcados.  Nesse sentido,
+este trabalho tem como proposta utilizar a plataforma Raspberry Pi, mais
+espicificamente a versão Raspberry Pi 3 modelo B. A ideia é aplicar algoritmos
+de conversão em escala de cinza em plataformas de baixo custo e que possuem uma
+arquitetura multicore para que seja capaz de aplicar tecnicas de paralelismo,
+aproveitando ao máximo o poder de processamento da plataforma utilizada.
+\end{resumo}
+
+\begin{section}{Introdução}
+\input{secs/sec1.tex}
+\end{section}
+\begin{section}{Trabalhos Relacionados}
+\input{secs/sec2.tex}
+\end{section}
+\begin{section}{Objetivos}
+\input{secs/sec3.tex}
+\end{section}
+\begin{section}{Metodologia}
+\input{secs/sec4.tex}
+\end{section}
+\begin{section}{Paralelismo}
+\input{secs/sec5.tex}
+\end{section}
+\begin{section}{Avaliação de Desempenho}
+\input{secs/sec6.tex}
+\end{section}
+\begin{section}{Avaliação de Desempenho}
+\input{secs/sec7.tex}
+\end{section}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
