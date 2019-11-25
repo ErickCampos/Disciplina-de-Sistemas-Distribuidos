@@ -19,4 +19,28 @@ Cada processador fica responsável por realizar o algoritmo de conversão em
 escala de cinza em uma determinada região da imagem (quando é utilizado
 realmente 4 \textit{threads}). Todo esse processo é realizado para cada imagem
 até que todas as imagens sejam processadas.
- 
+
+\subsection{OpenMPI}
+
+Já para a aplicação do paralelismo utilizando a biblioteca OpenMPI, foi
+realizada a abordagem de processar uma imagem em cada núcleo de processamento.
+Dessa forma, blocos de no máximo quatro imagens são carregados de uma vez para o
+processamento. A Figura~\ref{fig:mpi} ilustra a aplicação dessa abordagem.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figs/mpi}
+	\caption{Abordagem aplicada.}
+	\label{fig:mpi}
+\end{figure}
+
+A quantidade de imagens carregadas é igual a quantidade de núcleos de
+processamento utilizado. A imagem~\ref{fig:mpi} mostra o carregamento de quatro
+imagens de uma vez para ser processadas por quatro núcleos de forma
+independente. Esse tipo de abordagem causa um desbalanceamento quando é
+executado com três núcles, pois a quantidade de imagens da base não é divisível
+por três.
+
+
+
+
